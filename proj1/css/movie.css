@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Ava';
+    src: url(papyrus.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvaBold';
+    src: url(TorukscRegular-z8MA1.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    font-family: AvaBold;
+}
+
+body {
+    background-image: linear-gradient(to right, #1B2E61, #264189);
+    color: #9fd3d8;
+}
+
+section {
+    animation: fade-up 1s ease-out;
+}
+
+@keyframes fade-up {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.header {
+    text-align: center;
+    font-family: AvaBold;
+    font-size: 35px;
+    animation-duration: 3s;
+    animation-name: slide-in;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(150vw) scale(2, 1);
+    }
+
+    to {
+        transform: translateX(0) scale(1, 1);
+    }
+}
+
+.banner img {
+    animation: slow-zoom 10s ease-in-out forwards;
+}
+
+@keyframes slow-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.synopsis {
+    font-family: papyrus;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    animation-delay: 1s;
+}
+
+.images {
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    animation-delay: 2s;
+}
+
+.images h2 {
+    margin-bottom: 20px;
+}
+
+.images-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.images-grid img {
+    max-width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.images-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+.cast {
+    font-family: papyrus;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    animation-delay: 3s;
+}
+
+.cast img {
+    height: 250px;
+    width: 180px;
+    object-fit: cover;
+}
+
+.cast-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: #1f2833;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    max-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #9FD3D8;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.reviews {
+    font-family: papyrus;
+    width: 80%;
+    margin: 0 auto;
+    animation-delay: 4s;
+}
+
+.where-to-watch {
+    font-family: papyrus;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.where-to-watch img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #9FD3D8;
+}
+
+.buttons {
+    margin: 0 24px;
+}
+
+
+.footer {
+    font-family: papyrus;
+    text-align: center;
+}
