@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lollapalooza Fest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Fest Logo" class="logo">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tickets">Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section" style="background-image: url('assets/images/hero-bg.jpg')">
+        <div class="container hero-content">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h1 class="display-4 fw-bold mb-3">Lollapalooza 2025</h1>
+                    <p class="lead mb-4">The Ultimate Music Experience - Live Performances, Amazing Artists,
+                        Unforgettable Moments</p>
+
+                    <!-- Festival Countdown Timer -->
+                    <div class="festival-timer mb-4">
+                        <div class="timer-content">
+                            <h3 class="text-light mb-3">Festival Countdown</h3>
+                            <div class="timer-display">
+                                <div class="timer-unit">
+                                    <span id="days">00</span>
+                                    <small>Days</small>
+                                </div>
+                                <div class="timer-unit">
+                                    <span id="hours">00</span>
+                                    <small>Hours</small>
+                                </div>
+                                <div class="timer-unit">
+                                    <span id="minutes">00</span>
+                                    <small>Minutes</small>
+                                </div>
+                                <div class="timer-unit">
+                                    <span id="seconds">00</span>
+                                    <small>Seconds</small>
+                                </div>
+                            </div>
+                            <p class="text-light mt-2">Festival starts September 27, 2025</p>
+                        </div>
+                    </div>
+
+                    <a href="#tickets" class="btn btn-primary btn-lg me-3">Buy Tickets Now</a>
+                    <a href="schedule.html" class="btn btn-outline-light btn-lg">View Schedule</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lineup" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Featured Artists</h2>
+                <p class="lead">Discover the incredible lineup performing at Lollapalooza Fest 2025</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="1">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-1.jpg" alt="Slipknot" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Slipknot</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Saturday, 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="2">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-2.jpg" alt="Sleep Token" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Sleep Token</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Friday, 7:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="3">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-3.jpg" alt="Jacob Collier" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Jacob Collier</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Saturday, 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="4">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-4.jpg" alt="Arctic Monkeys" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Arctic Monkeys</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Friday, 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="5">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-5.jpg" alt="Dream Theater" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Dream Theater</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Sunday, 8:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="6">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-6.jpg" alt="Pentatonix" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Pentatonix</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Saturday, 4:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="7">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-7.jpg" alt="Avenged Sevenfold" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Avenged Sevenfold</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Friday, 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="8">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-8.jpg" alt="Green Day" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Green Day</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Sunday, 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="9">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-9.jpg" alt="Yungblud" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Yungblud</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Saturday, 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="10">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-10.jpg" alt="Stone Sour" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Stone Sour</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Friday, 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="11">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-11.jpg" alt="Linkin Park" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Linkin Park</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Sunday, 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="12">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-12.jpg" alt="My Chemical Romance" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>My Chemical Romance</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Saturday, 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="13">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-13.jpg" alt="Harris Jayaraj" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Harris Jayaraj</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Friday, 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="14">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-14.jpg" alt="Disturbed" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Disturbed</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Sunday, 3:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="15">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-15.jpg" alt="Oasis" class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Oasis</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Saturday, 12:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="artist-card" data-bs-toggle="modal" data-bs-target="#artistModal" data-artist="16">
+                        <div class="artist-image">
+                            <img src="assets/images/artists/artist-16.jpg" alt="Red Hot Chili Peppers"
+                                class="img-fluid">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Red Hot Chili Peppers</h3>
+                            <p class="performance-time"><i class="fas fa-clock me-2"></i>Friday, 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="tickets" class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title">Get Your Tickets Now!</h2>
+                    <p class="lead">Don't miss out on the biggest music event of the year. Limited tickets available.
+                    </p>
+                    <ul class="ticket-features">
+                        <li><i class="fas fa-check-circle text-success me-2"></i> General Admission: ₹999</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> VIP Experience: ₹12499 (Includes premium
+                            seating & backstage access)</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Weekend Pass: ₹10099</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Group Discounts Available</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-lg mt-3">Purchase Tickets</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ticket-image">
+                        <img src="assets/images/hero-bg.jpg" alt="Festival Crowd" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="lead">Have questions? Get in touch with our team.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="contact-info">
+                        <h3><i class="fas fa-map-marker-alt me-2"></i>Location</h3>
+                        <p>Nandi Link Grounds, Pantarapalya,<br> Nayanda Halli, Bengaluru, Karnataka 560026</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="contact-info">
+                        <h3><i class="fas fa-envelope me-2"></i>Email</h3>
+                        <p>info@lollapaloozaofficial.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="contact-info">
+                        <h3><i class="fas fa-phone me-2"></i>Phone</h3>
+                        <p>(+91) 00000 00000</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="contact-info">
+                        <h3><i class="fab fa-instagram me-2"></i>Social Media</h3>
+                        <p>@lollapaloozaofficial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Lollapalooza. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="artistModal" tabindex="-1" aria-labelledby="artistModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="artistModalLabel">Artist Name</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img id="modalArtistImage" src="" alt="Artist" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <h3 id="modalArtistName">Artist Name</h3>
+                            <p id="modalArtistBio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="mt-4">
+                                <h5>Performance Details</h5>
+                                <p><strong>Date:</strong> <span id="modalArtistDate">Friday, 7:30 PM</span></p>
+                                <p><strong>Stage:</strong> <span id="modalArtistStage">Main Stage</span></p>
+                                <p><strong>Genre:</strong> <span id="modalArtistGenre">Electronic / Pop</span></p>
+                            </div>
+                            <div class="mt-4">
+                                <h5>Follow the Artist</h5>
+                                <a href="#" class="btn btn-outline-primary me-2"><i
+                                        class="fab fa-spotify me-2"></i>Spotify</a>
+                                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-apple me-2"></i>Apple
+                                    Music</a>
+                                <a href="#" class="btn btn-outline-primary"><i
+                                        class="fab fa-instagram me-2"></i>Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Festival Countdown Timer
+        function updateCountdown() {
+            // Set your festival date here (year, month(0-11), day, hour, minute, second)
+            var festivalDate = new Date('2025-09-27T18:00:00'); 
+            var now = new Date();
+            var diff = festivalDate - now;
+
+            if (diff > 0) {
+                var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                // Update the timer display
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+                // Add animation effect
+                document.querySelectorAll('.timer-unit span').forEach(span => {
+                    span.style.transform = 'scale(1.1)';
+                    setTimeout(() => {
+                        span.style.transform = 'scale(1)';
+                    }, 100);
+                });
+            } else {
+                // Festival has started
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+
+
+                document.querySelector('.timer-content h3').textContent = 'Festival Started!';
+                document.querySelector('.timer-content p').textContent = 'Enjoy the show!';
+
+                // Clear the interval when festival starts
+                clearInterval(timerInterval);
+            }
+        }
+
+        // Start the timer when page loads
+        var timerInterval;
+        document.addEventListener('DOMContentLoaded', function () {
+            updateCountdown(); // Initial call
+            timerInterval = setInterval(updateCountdown, 1000); // Update every second
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

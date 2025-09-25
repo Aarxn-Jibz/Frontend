@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - Lollapalooza 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="" class="logo">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#tickets">Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section"
+        style="background-image: url('assets/images/hero-bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container hero-content">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h1 class="display-4 fw-bold mb-3" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+                        Festival Schedule</h1>
+                    <p class="lead mb-4" style="color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Plan your
+                        perfect weekend with our detailed schedule</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs mb-4" id="scheduleTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="friday-tab" data-bs-toggle="tab"
+                                data-bs-target="#friday" type="button" role="tab">Friday</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="saturday-tab" data-bs-toggle="tab" data-bs-target="#saturday"
+                                type="button" role="tab">Saturday</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sunday-tab" data-bs-toggle="tab" data-bs-target="#sunday"
+                                type="button" role="tab">Sunday</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="scheduleTabContent">
+                        <div class="tab-pane fade show active" id="friday" role="tabpanel">
+                            <div class="schedule-day">
+                                <h2 class="mb-4 text-light">Friday Schedule</h2>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4">
+                                        <h3 class="text-primary mb-3">Main Stage</h3>
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Harris Jayaraj</h4>
+                                                    <p class="text-muted mb-0">2:00 PM - 3:00 PM</p>
+                                                    <small class="text-muted">Genre: Indian Film Music</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="13">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Stone Sour</h4>
+                                                    <p class="text-muted mb-0">4:00 PM - 5:00 PM</p>
+                                                    <small class="text-muted">Genre: Hard Rock</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="10">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Avenged Sevenfold</h4>
+                                                    <p class="text-muted mb-0">6:00 PM - 7:00 PM</p>
+                                                    <small class="text-muted">Genre: Heavy Metal</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="7">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Sleep Token</h4>
+                                                    <p class="text-muted mb-0">7:30 PM - 8:30 PM</p>
+                                                    <small class="text-muted">Genre: Progressive Rock</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="2">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Arctic Monkeys</h4>
+                                                    <p class="text-muted mb-0">9:00 PM - 10:00 PM</p>
+                                                    <small class="text-muted">Genre: Indie Rock</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="4">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Red Hot Chili Peppers</h4>
+                                                    <p class="text-muted mb-0">10:00 PM - 11:00 PM</p>
+                                                    <small class="text-muted">Genre: Funk Rock</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="16">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-4">
+                                        <h3 class="text-primary mb-3">Side Stage</h3>
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Local Opening Acts</h4>
+                                                    <p class="text-muted mb-0">1:00 PM - 2:00 PM</p>
+                                                    <small class="text-muted">Various Genres</small>
+                                                </div>
+                                                <span class="badge bg-secondary">Local</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Acoustic Sessions</h4>
+                                                    <p class="text-muted mb-0">3:00 PM - 4:00 PM</p>
+                                                    <small class="text-muted">Unplugged Performances</small>
+                                                </div>
+                                                <span class="badge bg-info">Acoustic</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Jazz Collective</h4>
+                                                    <p class="text-muted mb-0">5:00 PM - 6:00 PM</p>
+                                                    <small class="text-muted">Jazz/Blues</small>
+                                                </div>
+                                                <span class="badge bg-warning">Jazz</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Electronic Lounge</h4>
+                                                    <p class="text-muted mb-0">8:00 PM - 9:00 PM</p>
+                                                    <small class="text-muted">Electronic/Chillout</small>
+                                                </div>
+                                                <span class="badge bg-success">Electronic</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Late Night DJ Set</h4>
+                                                    <p class="text-muted mb-0">11:00 PM - 1:00 AM</p>
+                                                    <small class="text-muted">Dance/House</small>
+                                                </div>
+                                                <span class="badge bg-danger">After Hours</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="saturday" role="tabpanel">
+                            <div class="schedule-day">
+                                <h2 class="mb-4 text-light">Saturday Schedule</h2>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4">
+                                        <h3 class="text-primary mb-3">Main Stage</h3>
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Oasis</h4>
+                                                    <p class="text-muted mb-0">12:00 PM - 1:00 PM</p>
+                                                    <small class="text-muted">Genre: Britpop</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="15">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Yungblud</h4>
+                                                    <p class="text-muted mb-0">2:00 PM - 3:00 PM</p>
+                                                    <small class="text-muted">Genre: Rock</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="9">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Pentatonix</h4>
+                                                    <p class="text-muted mb-0">4:30 PM - 5:30 PM</p>
+                                                    <small class="text-muted">Genre: A Cappella</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="6">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Jacob Collier</h4>
+                                                    <p class="text-muted mb-0">6:00 PM - 7:00 PM</p>
+                                                    <small class="text-muted">Genre: Jazz</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="3">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Slipknot</h4>
+                                                    <p class="text-muted mb-0">8:00 PM - 9:00 PM</p>
+                                                    <small class="text-muted">Genre: Nu-Metal</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="1">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">My Chemical Romance</h4>
+                                                    <p class="text-muted mb-0">10:00 PM - 11:00 PM</p>
+                                                    <small class="text-muted">Genre: Emo</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="12">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-4">
+                                        <h3 class="text-primary mb-3">Side Stage</h3>
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Brunch Sessions</h4>
+                                                    <p class="text-muted mb-0">11:00 AM - 12:00 PM</p>
+                                                    <small class="text-muted">Coffee House Music</small>
+                                                </div>
+                                                <span class="badge bg-secondary">Brunch</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Indie Showcase</h4>
+                                                    <p class="text-muted mb-0">3:30 PM - 4:30 PM</p>
+                                                    <small class="text-muted">Indie/Alternative</small>
+                                                </div>
+                                                <span class="badge bg-info">Indie</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Hip-Hop Battle</h4>
+                                                    <p class="text-muted mb-0">7:00 PM - 8:00 PM</p>
+                                                    <small class="text-muted">Hip-Hop/Battle</small>
+                                                </div>
+                                                <span class="badge bg-warning">Hip-Hop</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Electronic Dance Party</h4>
+                                                    <p class="text-muted mb-0">9:00 PM - 10:30 PM</p>
+                                                    <small class="text-muted">EDM/Techno</small>
+                                                </div>
+                                                <span class="badge bg-success">EDM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="sunday" role="tabpanel">
+                            <div class="schedule-day">
+                                <h2 class="mb-4 text-light">Sunday Schedule</h2>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4">
+                                        <h3 class="text-primary mb-3">Main Stage</h3>
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Disturbed</h4>
+                                                    <p class="text-muted mb-0">3:00 PM - 4:00 PM</p>
+                                                    <small class="text-muted">Genre: Heavy Metal</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="14">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Linkin Park</h4>
+                                                    <p class="text-muted mb-0">5:00 PM - 6:00 PM</p>
+                                                    <small class="text-muted">Genre: Nu-Metal</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="11">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Green Day</h4>
+                                                    <p class="text-muted mb-0">7:00 PM - 8:00 PM</p>
+                                                    <small class="text-muted">Genre: Punk Rock</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="8">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Dream Theater</h4>
+                                                    <p class="text-muted mb-0">8:30 PM - 9:30 PM</p>
+                                                    <small class="text-muted">Genre: Progressive Metal</small>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal" data-artist="5">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-4">
+                                        <h3 class="text-primary mb-3">Side Stage</h3>
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Yoga & Music</h4>
+                                                    <p class="text-muted mb-0">10:00 AM - 11:00 AM</p>
+                                                    <small class="text-muted">Relaxation/Meditation</small>
+                                                </div>
+                                                <span class="badge bg-secondary">Wellness</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Family Activities</h4>
+                                                    <p class="text-muted mb-0">12:00 PM - 2:00 PM</p>
+                                                    <small class="text-muted">Kids & Family Friendly</small>
+                                                </div>
+                                                <span class="badge bg-info">Family</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item bg-dark border border-secondary p-3 mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="text-light mb-1">Acoustic Finale</h4>
+                                                    <p class="text-muted mb-0">10:00 PM - 11:00 PM</p>
+                                                    <small class="text-muted">Unplugged/Intimate</small>
+                                                </div>
+                                                <span class="badge bg-warning">Finale</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="schedule-info bg-dark border border-secondary p-4 rounded">
+                        <h3 class="text-primary mb-3">Important Information</h3>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <h5 class="text-light"><i class="fas fa-clock me-2"></i>Opening Times</h5>
+                                <p class="text-muted mb-0">Friday: 11:00 AM - 1:00 AM</p>
+                                <p class="text-muted mb-0">Saturday: 10:00 AM - 11:30 PM</p>
+                                <p class="text-muted mb-0">Sunday: 9:00 AM - 11:00 PM</p>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <h5 class="text-light"><i class="fas fa-map-marker-alt me-2"></i>Stages</h5>
+                                <p class="text-muted mb-0">Main Stage: Large outdoor stage</p>
+                                <p class="text-muted mb-0">Side Stage: Intimate indoor venue</p>
+                                <p class="text-muted mb-0">VIP Area: Premium viewing section</p>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <h5 class="text-light"><i class="fas fa-exclamation-triangle me-2"></i>Notice</h5>
+                                <p class="text-muted mb-0">Schedules are subject to change</p>
+                                <p class="text-muted mb-0">Please check mobile app for updates</p>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <h5 class="text-light"><i class="fas fa-wifi me-2"></i>Mobile App</h5>
+                                <p class="text-muted mb-0">Download our app for real-time updates</p>
+                                <p class="text-muted mb-0">Push notifications for schedule changes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="artistModal" tabindex="-1" aria-labelledby="artistModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-light" id="artistModalLabel">Artist Name</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img id="modalArtistImage" src="" alt="Artist" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <h3 id="modalArtistName" class="text-light">Artist Name</h3>
+                            <p id="modalArtistBio" class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.</p>
+                            <div class="mt-4">
+                                <h5 class="text-light">Performance Details</h5>
+                                <p class="text-light"><strong>Date:</strong> <span id="modalArtistDate">Friday, 7:30
+                                        PM</span></p>
+                                <p class="text-light"><strong>Stage:</strong> <span id="modalArtistStage">Main
+                                        Stage</span></p>
+                                <p class="text-light"><strong>Genre:</strong> <span id="modalArtistGenre">Electronic /
+                                        Pop</span></p>
+                            </div>
+                            <div class="mt-4">
+                                <h5 class="text-light">Follow the Artist</h5>
+                                <a href="#" class="btn btn-outline-primary me-2"><i
+                                        class="fab fa-spotify me-2"></i>Spotify</a>
+                                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-apple me-2"></i>Apple
+                                    Music</a>
+                                <a href="#" class="btn btn-outline-primary"><i
+                                        class="fab fa-instagram me-2"></i>Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-black text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Lollapalooza. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
