@@ -1,6 +1,6 @@
 # Music App is a Music Streaming and Playlist Management Application using Angular and TypeScript
 
-## Run COde
+## Run Code
 To run code just enter
 ```
 ng serve
@@ -48,3 +48,4 @@ artist-detail – displays artist biography and top tracks
 navbar – provides navigation (Home, Artists, Playlists, Now Playing)
 
 Use data binding, event binding, and directives (*ngIf, *ngFor, [ngClass], [ngStyle]) to dynamically manage the music list and UI updates.
+
