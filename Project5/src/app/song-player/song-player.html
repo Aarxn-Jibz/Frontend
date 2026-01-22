@@ -1,0 +1,35 @@
+<mat-card *ngIf="(songDetails$ | async)?.song as song" class="player-card">
+  <mat-card-content>
+    <div class="player-content">
+      <div class="song-info">
+        <img [src]="song.coverArt || 'https://via.placeholder.com/80x80?text=Music'" 
+             [alt]="song.title" 
+             class="cover-art">
+        <div class="song-details">
+          <div class="song-title">{{ song.title }}</div>
+          <div class="song-artist">{{ (songDetails$ | async)?.artist?.name || 'Unknown Artist' }}</div>
+        </div>
+      </div>
+      
+      <div class="player-controls">
+        <button mat-icon-button (click)="togglePlayPause()" color="primary" class="play-button">
+          <mat-icon>{{ isPlaying ? 'pause' : 'play_arrow' }}</mat-icon>
+        </button>
+        
+        <div class="progress-section">
+          <span class="time-display">{{ formatTime(currentTime) }}</span>
+          <mat-slider 
+            [min]="0" 
+            [max]="duration" 
+            [(ngModel)]="currentTime"
+            (ngModelChange)="onSeek($event)"
+            class="progress-slider">
+          </mat-slider>
+          <span class="time-display">{{ formatTime(duration) }}</span>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<audio #audioElement style="display: none;"></audio>

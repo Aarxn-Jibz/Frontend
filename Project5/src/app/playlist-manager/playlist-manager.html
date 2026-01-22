@@ -1,0 +1,91 @@
+<div class="playlist-manager-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Playlist Manager</mat-card-title>
+      <button mat-raised-button color="primary" (click)="createPlaylist()" style="margin-left: auto;">
+        <mat-icon>add</mat-icon>
+        Create Playlist
+      </button>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div *ngIf="showForm" class="playlist-form">
+        <h3>{{ editingPlaylist ? 'Edit Playlist' : 'Create New Playlist' }}</h3>
+        <form [formGroup]="playlistForm" (ngSubmit)="savePlaylist()">
+          <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label>Playlist Name</mat-label>
+            <input matInput formControlName="name" required>
+            <mat-error *ngIf="playlistForm.get('name')?.hasError('required')">
+              Name is required
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label>Description</mat-label>
+            <textarea matInput formControlName="description" rows="3"></textarea>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label>Songs</mat-label>
+            <mat-select formControlName="songIds" multiple>
+              <mat-option *ngFor="let song of allSongs$ | async" [value]="song.id">
+                {{ song.title }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <div class="form-actions">
+            <button mat-raised-button color="primary" type="submit" [disabled]="!playlistForm.valid">
+              {{ editingPlaylist ? 'Update' : 'Create' }}
+            </button>
+            <button mat-button type="button" (click)="cancelEdit()">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="playlists-list">
+        <ng-container *ngIf="playlists$ | async as playlists">
+          <div *ngIf="playlists.length > 0; else noPlaylists">
+            <mat-card *ngFor="let playlist of playlists" class="playlist-card" style="margin-bottom: 20px;">
+              <mat-card-content>
+                <div class="playlist-content">
+                  <div class="playlist-header">
+                    <h3>{{ playlist.name }}</h3>
+                    <div class="playlist-actions">
+                      <button mat-icon-button (click)="editPlaylist(playlist)" color="primary">
+                        <mat-icon>edit</mat-icon>
+                      </button>
+                      <button mat-icon-button (click)="deletePlaylist(playlist.id)" color="warn">
+                        <mat-icon>delete</mat-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <p *ngIf="playlist.description" class="playlist-description">{{ playlist.description }}</p>
+                  <p class="playlist-info">{{ playlist.songs.length }} song(s)</p>
+                  
+                  <div *ngIf="playlist.songs.length > 0" class="songs-in-playlist">
+                    <mat-list>
+                      <mat-list-item *ngFor="let song of playlist.songs">
+                        <span matListItemTitle>{{ song.title }}</span>
+                        <span matListItemLine>{{ formatDuration(song.duration) }}</span>
+                        <button mat-icon-button (click)="removeSongFromPlaylist(playlist.id, song.id)" color="warn" matListItemMeta>
+                          <mat-icon>remove_circle</mat-icon>
+                        </button>
+                      </mat-list-item>
+                    </mat-list>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </ng-container>
+
+        <ng-template #noPlaylists>
+          <p style="text-align: center; padding: 20px; color: #C0C0C0;">
+            No playlists yet. Create one to get started!
+          </p>
+        </ng-template>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

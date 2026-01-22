@@ -1,0 +1,163 @@
+[
+  {
+    "id": "album1",
+    "title": "Abbey Road",
+    "artistId": "artist1",
+    "releaseYear": 1969,
+    "coverArt": "https://via.placeholder.com/300x300?text=Abbey+Road"
+  },
+  {
+    "id": "album2",
+    "title": "Sgt. Pepper's Lonely Hearts Club Band",
+    "artistId": "artist1",
+    "releaseYear": 1967,
+    "coverArt": "https://via.placeholder.com/300x300?text=Sgt+Pepper"
+  },
+  {
+    "id": "album3",
+    "title": "Revolver",
+    "artistId": "artist1",
+    "releaseYear": 1966,
+    "coverArt": "https://via.placeholder.com/300x300?text=Revolver"
+  },
+  {
+    "id": "album4",
+    "title": "The Dark Side of the Moon",
+    "artistId": "artist2",
+    "releaseYear": 1973,
+    "coverArt": "https://via.placeholder.com/300x300?text=Dark+Side+Moon"
+  },
+  {
+    "id": "album5",
+    "title": "The Wall",
+    "artistId": "artist2",
+    "releaseYear": 1979,
+    "coverArt": "https://via.placeholder.com/300x300?text=The+Wall"
+  },
+  {
+    "id": "album6",
+    "title": "Wish You Were Here",
+    "artistId": "artist2",
+    "releaseYear": 1975,
+    "coverArt": "https://via.placeholder.com/300x300?text=Wish+You+Were+Here"
+  },
+  {
+    "id": "album7",
+    "title": "A Night at the Opera",
+    "artistId": "artist3",
+    "releaseYear": 1975,
+    "coverArt": "https://via.placeholder.com/300x300?text=Night+Opera"
+  },
+  {
+    "id": "album8",
+    "title": "News of the World",
+    "artistId": "artist3",
+    "releaseYear": 1977,
+    "coverArt": "https://via.placeholder.com/300x300?text=News+World"
+  },
+  {
+    "id": "album9",
+    "title": "Greatest Hits",
+    "artistId": "artist3",
+    "releaseYear": 1981,
+    "coverArt": "https://via.placeholder.com/300x300?text=Queen+GH"
+  },
+  {
+    "id": "album10",
+    "title": "Led Zeppelin IV",
+    "artistId": "artist4",
+    "releaseYear": 1971,
+    "coverArt": "https://via.placeholder.com/300x300?text=Zeppelin+IV"
+  },
+  {
+    "id": "album11",
+    "title": "Led Zeppelin II",
+    "artistId": "artist4",
+    "releaseYear": 1969,
+    "coverArt": "https://via.placeholder.com/300x300?text=Zeppelin+II"
+  },
+  {
+    "id": "album12",
+    "title": "Physical Graffiti",
+    "artistId": "artist4",
+    "releaseYear": 1975,
+    "coverArt": "https://via.placeholder.com/300x300?text=Physical+Graffiti"
+  },
+  {
+    "id": "album13",
+    "title": "Sticky Fingers",
+    "artistId": "artist5",
+    "releaseYear": 1971,
+    "coverArt": "https://via.placeholder.com/300x300?text=Sticky+Fingers"
+  },
+  {
+    "id": "album14",
+    "title": "Exile on Main St.",
+    "artistId": "artist5",
+    "releaseYear": 1972,
+    "coverArt": "https://via.placeholder.com/300x300?text=Exile"
+  },
+  {
+    "id": "album15",
+    "title": "AM",
+    "artistId": "artist6",
+    "releaseYear": 2013,
+    "coverArt": "https://via.placeholder.com/300x300?text=AM"
+  },
+  {
+    "id": "album16",
+    "title": "Favourite Worst Nightmare",
+    "artistId": "artist6",
+    "releaseYear": 2007,
+    "coverArt": "https://via.placeholder.com/300x300?text=FWN"
+  },
+  {
+    "id": "album17",
+    "title": "Whatever People Say I Am",
+    "artistId": "artist6",
+    "releaseYear": 2006,
+    "coverArt": "https://via.placeholder.com/300x300?text=WPSIATWIN"
+  },
+  {
+    "id": "album18",
+    "title": "Images and Words",
+    "artistId": "artist7",
+    "releaseYear": 1992,
+    "coverArt": "https://via.placeholder.com/300x300?text=Images+Words"
+  },
+  {
+    "id": "album19",
+    "title": "Metropolis Pt. 2: Scenes from a Memory",
+    "artistId": "artist7",
+    "releaseYear": 1999,
+    "coverArt": "https://via.placeholder.com/300x300?text=Metropolis"
+  },
+  {
+    "id": "album20",
+    "title": "Awake",
+    "artistId": "artist7",
+    "releaseYear": 1994,
+    "coverArt": "https://via.placeholder.com/300x300?text=Awake"
+  },
+  {
+    "id": "album21",
+    "title": "Slipknot",
+    "artistId": "artist8",
+    "releaseYear": 1999,
+    "coverArt": "https://via.placeholder.com/300x300?text=Slipknot"
+  },
+  {
+    "id": "album22",
+    "title": "Iowa",
+    "artistId": "artist8",
+    "releaseYear": 2001,
+    "coverArt": "https://via.placeholder.com/300x300?text=Iowa"
+  },
+  {
+    "id": "album23",
+    "title": "Vol. 3: The Subliminal Verses",
+    "artistId": "artist8",
+    "releaseYear": 2004,
+    "coverArt": "https://via.placeholder.com/300x300?text=Vol3"
+  }
+]

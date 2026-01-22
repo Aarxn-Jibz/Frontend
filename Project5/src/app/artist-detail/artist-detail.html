@@ -1,0 +1,60 @@
+<div class="artist-detail-container" *ngIf="artist$ | async as artist">
+  <mat-card>
+    <div class="artist-header">
+      <img [src]="artist.image || 'https://via.placeholder.com/200x200?text=Artist'" 
+           [alt]="artist.name" 
+           class="artist-image">
+      <div class="artist-info">
+        <h1>{{ artist.name }}</h1>
+        <p class="artist-bio">{{ artist.bio }}</p>
+      </div>
+    </div>
+  </mat-card>
+
+  <mat-card style="margin-top: 20px;">
+    <mat-card-header>
+      <mat-card-title>Albums</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="albums-grid" *ngIf="(albums$ | async)?.length; else noAlbums">
+        <mat-card *ngFor="let album of albums$ | async" class="album-card">
+          <img [src]="album.coverArt || 'https://via.placeholder.com/150x150?text=Album'" 
+               [alt]="album.title" 
+               class="album-cover">
+          <mat-card-content>
+            <h3>{{ album.title }}</h3>
+            <p>{{ album.releaseYear }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <ng-template #noAlbums>
+        <p>No albums available for this artist.</p>
+      </ng-template>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card style="margin-top: 20px;">
+    <mat-card-header>
+      <mat-card-title>Songs</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list *ngIf="(songs$ | async)?.length; else noSongs">
+        <mat-list-item *ngFor="let song of songs$ | async" class="song-item">
+          <mat-icon matListItemIcon>music_note</mat-icon>
+          <div matListItemTitle>{{ song.title }}</div>
+          <div matListItemLine>{{ formatDuration(song.duration) }}</div>
+          <button mat-icon-button (click)="playSong(song)" color="primary" matListItemMeta>
+            <mat-icon>play_arrow</mat-icon>
+          </button>
+        </mat-list-item>
+      </mat-list>
+      <ng-template #noSongs>
+        <p>No songs available for this artist.</p>
+      </ng-template>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div *ngIf="!(artist$ | async)" class="loading">
+  <p>Loading artist information...</p>
+</div>

@@ -1,0 +1,240 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000 !important;
+  color: #C0C0C0 !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #C0C0C0;
+  --accent-color: #808080;
+  --bg-color: #000000;
+  --card-bg: #1a1a1a;
+  --text-primary: #C0C0C0;
+  --text-secondary: #808080;
+}
+
+/* Material Theme Overrides */
+.mat-primary {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.mat-accent {
+  background-color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.mat-toolbar.mat-primary {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+button.mat-primary {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+button.mat-primary:hover {
+  background-color: #333333 !important;
+}
+
+.mat-raised-button.mat-primary {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.mat-icon-button.mat-primary {
+  color: var(--secondary-color) !important;
+}
+
+.mat-icon-button.mat-primary:hover {
+  background-color: rgba(192, 192, 192, 0.1) !important;
+}
+
+/* Cards */
+mat-card {
+  background-color: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+mat-card-content {
+  color: var(--text-primary) !important;
+}
+
+mat-card-title {
+  color: var(--text-primary) !important;
+}
+
+/* Form Fields */
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: var(--secondary-color) !important;
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: var(--secondary-color) !important;
+}
+
+.mat-form-field-label {
+  color: var(--text-secondary) !important;
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-label {
+  color: var(--secondary-color) !important;
+}
+
+input.mat-input-element, textarea.mat-input-element {
+  color: var(--text-primary) !important;
+}
+
+/* Slider */
+.mat-slider-thumb {
+  background-color: var(--secondary-color) !important;
+}
+
+.mat-slider-track-fill {
+  background-color: var(--secondary-color) !important;
+}
+
+.mat-slider-track-background {
+  background-color: rgba(192, 192, 192, 0.3) !important;
+}
+
+.mat-table {
+  background-color: var(--card-bg) !important;
+}
+
+.mat-header-cell {
+  color: var(--secondary-color) !important;
+}
+
+.mat-cell {
+  color: var(--text-primary) !important;
+}
+
+.mat-row:hover {
+  background-color: rgba(192, 192, 192, 0.05) !important;
+}
+
+mat-list-item {
+  color: var(--text-primary) !important;
+}
+
+a {
+  color: var(--secondary-color) !important;
+}
+
+a:hover {
+  color: white !important;
+}
+
+.mat-button, .mat-raised-button {
+  color: var(--text-primary) !important;
+}
+
+.mat-button.mat-warn, .mat-raised-button.mat-warn {
+  color: #ff5252 !important;
+}
+
+.mat-select-value {
+  color: var(--text-primary) !important;
+}
+
+.mat-option {
+  background-color: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+.mat-option:hover {
+  background-color: rgba(192, 192, 192, 0.1) !important;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, div {
+  color: #C0C0C0 !important;
+}
+
+mat-card-header {
+  background-color: #1a1a1a !important;
+}
+
+mat-card-header mat-card-title {
+  color: #C0C0C0 !important;
+}
+
+.mat-list-item {
+  color: #C0C0C0 !important;
+}
+
+.mat-list-item-content {
+  color: #C0C0C0 !important;
+}
+
+.mat-table {
+  background-color: #1a1a1a !important;
+}
+
+.mat-header-row {
+  background-color: #000000 !important;
+}
+
+.mat-row {
+  background-color: #1a1a1a !important;
+}
+
+.mat-error {
+  color: #C0C0C0 !important;
+}
+
+.mat-select-panel {
+  background-color: #1a1a1a !important;
+}
+
+.mat-dialog-container {
+  background-color: #1a1a1a !important;
+  color: #C0C0C0 !important;
+}
+
+.mat-form-field-wrapper {
+  background-color: transparent !important;
+}
+
+.mat-form-field-infix {
+  background-color: transparent !important;
+}
+
+button {
+  color: #C0C0C0 !important;
+}
+
+button.mat-primary {
+  background-color: #000000 !important;
+  color: #C0C0C0 !important;
+}
+
+button.mat-warn {
+  color: #C0C0C0 !important;
+}
+
+a {
+  color: #C0C0C0 !important;
+}
+
+mat-icon {
+  color: #C0C0C0 !important;
+}
+
+button mat-icon {
+  color: #C0C0C0 !important;
+}
+
+.mat-icon-button mat-icon {
+  color: #C0C0C0 !important;
+}

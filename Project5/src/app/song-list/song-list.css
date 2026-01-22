@@ -1,0 +1,11 @@
+.song-list-container {
+  width: 100%;
+}
+
+.songs-table {
+  width: 100%;
+}
+
+.songs-table img {
+  margin-right: 10px;
+}
